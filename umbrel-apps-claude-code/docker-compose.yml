@@ -10,8 +10,7 @@ services:
     volumes:
       - "${APP_DATA_DIR}/home:/root"
       - "${APP_DATA_DIR}/projects:/projects"
-    environment:
-      - PATH=/root/.local/bin:/root/.claude/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+      - "/home/umbrel:/home/umbrel"
     command: >
       /bin/bash -c "
         apt-get update -qq &&
