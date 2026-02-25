@@ -1,0 +1,19 @@
+manifestVersion: 1
+id: claude-code
+category: developer-tools
+name: Claude Code
+version: "1.0.0"
+tagline: Terminal AI para programação
+description: Claude Code via terminal web. Após instalar abre em http://umbrel.local:7681
+developer: Anthropic
+website: https://claude.ai
+dependencies: []
+repo: ""
+support: ""
+port: 7681
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+icon: "https://raw.githubusercontent.com/caffex/umbrel-apps/main/claude-code/icon.png"
