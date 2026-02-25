@@ -6,7 +6,7 @@ services:
     container_name: umbrel-apps-claude-code
     restart: unless-stopped
     ports:
-      - "${APP_PORT}:7681"
+      - "7681:7681"
     volumes:
       - "${APP_DATA_DIR}/home:/root"
       - "${APP_DATA_DIR}/projects:/projects"
