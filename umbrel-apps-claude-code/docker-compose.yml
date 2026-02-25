@@ -3,7 +3,7 @@ version: "3.7"
 services:
   web:
     image: ubuntu:24.04
-    container_name: claude-code
+    container_name: umbrel-apps-claude-code
     restart: unless-stopped
     ports:
       - "${APP_PORT}:7681"
