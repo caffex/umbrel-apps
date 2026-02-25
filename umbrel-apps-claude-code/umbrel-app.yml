@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: claude-code
+id: umbrel-apps-claude-code
 category: developer-tools
 name: Claude Code
 version: "1.0.0"
