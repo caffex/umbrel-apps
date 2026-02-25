@@ -1,18 +1,17 @@
-version: "3.7"
-
 services:
   web:
     image: ubuntu:24.04
     container_name: umbrel-apps-claude-code
     restart: unless-stopped
     ports:
-      - "7681:7681"
+      - '7681:7681'
     volumes:
-      - "${APP_DATA_DIR}/home:/root"
-      - "${APP_DATA_DIR}/projects:/projects"
-      - "/home/umbrel:/home/umbrel"
+      - /home/umbrel/umbrel/app-data/umbrel-apps-claude-code/home:/root
+      - /home/umbrel/umbrel/app-data/umbrel-apps-claude-code/projects:/projects
+      - /home/umbrel:/home/umbrel
     command: >
       /bin/bash -c "
+        export PATH=$$HOME/.local/bin:$$HOME/.claude/local/bin:$$PATH &&
         apt-get update -qq &&
         apt-get install -y -qq curl ttyd &&
         if ! command -v claude &>/dev/null; then
