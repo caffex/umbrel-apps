@@ -10,9 +10,10 @@ services:
     volumes:
       - "${APP_DATA_DIR}/home:/root"
       - "${APP_DATA_DIR}/projects:/projects"
+    environment:
+      - PATH=/root/.local/bin:/root/.claude/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
     command: >
       /bin/bash -c "
-        export PATH=$$HOME/.local/bin:$$HOME/.claude/local/bin:$$PATH &&
         apt-get update -qq &&
         apt-get install -y -qq curl ttyd &&
         if ! command -v claude &>/dev/null; then
