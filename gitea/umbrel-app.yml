@@ -1,0 +1,22 @@
+manifestVersion: 1
+id: gitea
+category: developer-tools
+name: Gitea
+version: "1.22"
+tagline: Servidor Git self-hosted leve e rápido
+description: >-
+  Gitea é uma solução Git self-hosted leve e de alto desempenho, escrita em Go.
+  Gerencie repositórios, issues, pull requests, CI/CD e muito mais diretamente
+  no seu Umbrel.
+developer: Gitea
+website: https://gitea.io
+dependencies: []
+repo: https://github.com/go-gitea/gitea
+support: https://discourse.gitea.io
+port: 3000
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false
+icon: "https://raw.githubusercontent.com/caffex/umbrel-apps/main/gitea/icon.png"
